@@ -65,6 +65,17 @@ const App = () => {
     const checkCollision = () => {
       const head = snake[0];
 
+      const gameOver = () => {
+        alert(`Game Over! Your Score: ${currentScore}`);
+        setSnake(initialSnakePosition);
+        setSnakeDirection(initialSnakeDirection);
+        setSnakeFood(getRandomPosition());
+        setCurrentScore(0);
+        setHighlight(false);
+        setLevel(defaultLevel);
+        setSpeed(defaultSpeed);
+      };
+
       if (
         head.row < 0 ||
         head.col < 0 ||
@@ -167,17 +178,6 @@ const App = () => {
       }
     }
     return grid;
-  };
-
-  const gameOver = () => {
-    alert(`Game Over! Your Score: ${currentScore}`);
-    setSnake(initialSnakePosition);
-    setSnakeDirection(initialSnakeDirection);
-    setSnakeFood(getRandomPosition());
-    setCurrentScore(0);
-    setHighlight(false);
-    setLevel(defaultLevel);
-    setSpeed(defaultSpeed);
   };
 
   return (
