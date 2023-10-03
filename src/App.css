@@ -1,0 +1,53 @@
+/* Add this CSS to your component or a separate stylesheet */
+.main-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.score-board {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.snake-board {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+}
+
+.game-container {
+  display: grid;
+  grid-template-columns: repeat(20, 20px);
+  grid-gap: 1px;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.highlight {
+  color: rgb(255, 80, 80);
+  font-weight: bold;
+  transition: 0.3s all;
+}
+
+.cell {
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+}
+
+.snake-cell {
+  background-color: rgb(88, 88, 255);
+}
+
+.food-cell {
+  background-color: rgb(255, 80, 80);
+}
+
+p {
+  font-size: 24px;
+}
