@@ -40,7 +40,7 @@ To run the game locally, follow these steps:
 
 ## Author
 
-# `[Aniket Sharma](https://github.com/AniketSharma24)`
+### `[Aniket Sharma](https://github.com/AniketSharma24)`
 
 ---------
 
